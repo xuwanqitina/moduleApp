@@ -1,0 +1,46 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    &::before,
+    &::after{
+        content: "";
+        display: table;
+    }
+    &::after{
+        clear: both;
+    }
+
+}
+.flex-group{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    &.justify{
+        justify-content: center;
+    }
+}
+.layout-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: px2rem(132);
+    padding: px2rem(18) px2rem(20) px2rem(14);
+    background-color: $gf;
+    font-size: px2rem(36);
+    line-height: px2rem(100);
+    .topBar-user-avatar{
+        width: px2rem(100);
+        height: px2rem(100);
+        margin: 0 px2rem(2);
+        border-radius: 50%;
+        background: $temp-color;
+    }
+    .topBar-user-name{
+        text-indent: px2rem(20);
+    }
+}

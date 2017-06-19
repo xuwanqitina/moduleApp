@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>app</title>
+    <!--<link rel="stylesheet" href="src/assets/css/media.css">-->
+    <script>
+        ;(function(window,document){
+            var html = document.getElementsByTagName("html")[0];
+            function setRoot (){
+                var deviceWidth = document.documentElement.clientWidth,
+                    roots = deviceWidth / 10;
+
+                var fontSize = roots > 54 ? 54 : roots;
+
+                html.style.fontSize = fontSize + "px";
+
+            }
+
+            setRoot();
+            window.addEventListener("resize", setRoot, false)
+        })(window,document)
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

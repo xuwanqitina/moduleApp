@@ -1,0 +1,33 @@
+$psd-size       :       1080            ;
+$base-size      :       $psd-size/10    ;
+
+@function px2rem($size){
+    @return $size / $base-size * 1rem;
+}
+
+@function fn2em($size){
+    @return $size / 30 * 1em;
+}
+
+$gf             :        #fff           ;
+$g3             :        #333           ;
+$a4             :        #a4a4a4        ;
+$body-color     :        #efeff4        ;
+$border-blue    :        #158cff        ;
+$temp-color     :        #fcbd83        ;
+
+$nav-purple     :        #ad8ada        ;
+$nav-green      :        #abda8a        ;
+$nav-orange     :        #f6c441        ;
+$nav-blue       :        #719cea        ;
+$nav-darkblue   :        #7293b9        ;
+$nav-darkorange :        #ed6c44        ;
+$nav-chocolate  :        #c3a279        ;
+$nav-black      :        #4c4743        ;
+
+
+$font-currentColor :     #148bff        ;
+
+$storage-news   :        #f3f9fe        ;
+$news-font      :        #158cff        ;
+$news-line      :        #efeff4        ;
